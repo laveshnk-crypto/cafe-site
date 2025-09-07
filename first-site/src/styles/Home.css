@@ -1,0 +1,441 @@
+/* Main pages */
+
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/bbq.jpg);
+    height: 60vh;
+    width: 100%;
+    /* tint */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    padding: 5%;
+}
+
+.menu {
+    display: flex;
+    background-color: #25304884;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    min-width: 0;
+}
+.menu * {
+    max-width: 100%;
+}
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    background-color: #25304884;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+    margin-top: 5%;
+}
+/* Card styles */
+
+.cardList{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.cardImg1{
+    list-style: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/cooking1.png);
+    width: 300px;
+    height: 800px;
+    background-size: cover;
+    /* zoom in a tiny bit */
+    background-position: center;
+}
+.cardImg2{
+    list-style: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/cooking2.jpg);
+    width: 300px;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card{
+    list-style: none;
+    width: 500px;
+    height: 800px;
+    background-color: #25304884;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+
+}
+
+.h2Card{
+    color: rgb(169, 158, 158);
+    font-weight: 100;
+    max-width: 70%;
+    text-align:center;
+    overflow: hidden;
+}
+.h3 {
+    color: white;
+    font-family: "Playwrite AU NSW";
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+}
+.h3About {
+    color: white;
+    font-family: "Playwrite AU NSW";
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+}
+
+.h2 {
+    color: rgb(169, 158, 158);
+    font-weight: 100;
+    margin: 0;
+    max-width: 30%;
+    text-align:center;
+    overflow: hidden;
+}
+
+.h2Contact {
+    color: rgb(169, 158, 158);
+    font-weight: 100;
+    font-size: medium;
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    /* remove or override */
+    max-width: none;  
+}
+
+
+.h1{
+    color: white;
+}
+
+.h1Lite{
+    color: white;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+.h1LiteAbout{
+    color: white;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    overflow: hidden;
+    margin-bottom:30px
+}
+.h1LiteTnM{
+    color: white;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    overflow: hidden;
+    
+    margin-bottom:30px
+}
+
+/* Order Section */
+
+.orderList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1Order {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: -1%;
+}
+
+.h3Order {
+    color: white;
+    font-family: "Playwrite AU NSW";
+    font-weight: 400;
+    font-style: italic;
+    align-self: flex-start;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.orderBox{
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    background-color: #25304884;
+    border-radius: 3%;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+    width: 50%;
+}
+
+.orderLabel{
+    color: white;
+    font-weight: 100;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.orderInput{
+    border-radius: 5px;
+    border: #141c2c84;
+    background-color: #141c2c84;
+    font-size: 1.3em;
+    padding: 1%;
+    }
+
+.removeDishButtonContainer{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+.removeDishButton{
+    background-image: url(../assets/removeIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.removeDishButton:hover{
+    filter: brightness(0) invert(0.5);
+    transition: filter 0.3s ease;
+}
+
+.orderSubmitButton{
+    margin-top: 4%;
+    background-color: #c37816;
+    border-radius: 0%;
+    color: white;
+    width: 20%;
+}
+.DishRowContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+.orderSubmitButton:hover{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.dishRow {
+    display: flex;
+    flex-direction: column; /* stack label + input */
+    margin-bottom: 1.5rem;  /* space between dish blocks */
+}
+
+.orangeButton{
+    background-color: #c37816;
+    border-radius: 0%;
+    height: 80px;
+    width: 150px;
+    color:white;
+}
+
+.orangeButton:hover{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+/* Menu page */
+
+.menuList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menuPic{
+    list-style: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/cooking3.jpeg);
+    width: 500px;
+    height: 800px;
+    background-size: cover;
+    /* zoom in a tiny bit */
+    background-position: center;
+}
+
+.menuHead{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.menuItem {
+    color: rgb(169, 158, 158);
+    font-weight: 100;
+    margin: 0;
+    text-align:center;
+    overflow: hidden;
+}
+
+.menuBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.orange-line{
+    margin-left: 10%;
+    margin-right: 1%;
+    flex: 1;
+    height: 1px;
+    background-color: orange;
+}
+
+.menuPrice{
+    color: rgb(161, 117, 37);
+    font-weight: bold;
+}
+
+.instagramIcon{
+    background-image: url(../assets/logos/instagram.svg);
+    filter: brightness(0) invert(1);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
+.mapIcon{
+    background-image: url(../assets/logos/maps.svg);
+    background-repeat: no-repeat;
+    filter: brightness(0) invert(1);
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+
+.phoneIcon{
+    background-image: url(../assets/logos/phone.svg);
+    background-repeat: no-repeat;
+    filter: brightness(0) invert(1);
+    width: 30px;
+    height: 30px;
+}
+
+/* Mobile UI */
+@media (max-width: 768px) {
+    .cardList{
+        flex-direction: column;
+        padding: 0;
+    }
+    .orangeButton{
+        margin-bottom: 20px;
+        height: 60px;
+    }
+    .card{
+        width: 90%;
+        height: auto;
+    }
+    .cardImg1, .cardImg2{
+        display: none;
+    }
+    .h1{
+        font-size: 2em;
+    }
+    .h1Lite{
+        font-size: 1.5em;
+    }
+    .h2{
+        font-size: 1em;
+    }
+    .h3{
+        margin-top:10%;
+        font-size: 1em;
+    }
+    .menu{
+        padding: 0;
+    }
+    .menuPic{
+        display: none;
+    }
+    .h3About{
+        text-align: left;
+        width: 100%;
+        margin-left: 10%;
+        font-size: 1em;
+    }
+    .h1LiteAbout{
+        text-align: left;
+        width: 100%;
+        margin-left: 10%;
+        font-size: 1.5em;
+    }
+    .h1LiteTnM{
+        text-align: center;
+        width: 50%;
+        margin-left: 3%;
+        font-size: 1.5em;
+    }
+    .h1Order{
+        text-align: left;
+        width: 100%;
+        margin-left: 10%;
+        font-size: 1.5em;
+    }
+    .menuPrice{
+        margin-right:5%
+    }
+    .orderBox{
+        width: 80%;
+    }
+    .orderLabel{
+        font-size: 1.5em;
+    }
+    .orderInput{
+        font-size: 1em;
+    }
+    .orderSubmitButton{
+        width: 40%;
+        height: 60px;
+        font-size: 1em;
+    }
+}

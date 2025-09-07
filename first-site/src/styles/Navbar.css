@@ -1,0 +1,66 @@
+.navBar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    position:sticky;
+    flex-wrap: wrap;
+}
+
+.orderButton{
+    background-color: #c37816;
+    border-radius: 0%;
+    color: white;
+}
+
+.orderButton:hover{
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.logo{
+    background-image: url(../assets/logo-test.svg);
+    width: 130px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0) invert(1);
+}
+
+
+.navList{
+    list-style: none;
+    display:flex;
+    gap:2rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navList li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.navList li a:hover{
+    color: #c37816;
+    transition: color 0.3s ease;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    
+}
+
+/* Mobile layout to do later*/
+
+@media (max-width: 768px){
+    .navBar{
+        flex-direction: column;
+    }
+    .orderButton{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
